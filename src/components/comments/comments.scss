@@ -1,0 +1,122 @@
+@import "../../global.scss";
+
+.comments {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  @include mobile {
+    overflow: scroll;
+  }
+  .item {
+    width: 390px;
+    height: 430px;
+    background-color: #c6e8f3;
+    border: 1px solid;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    .icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 0%,
+        rgba(168, 253, 45, 1) 100%
+      );
+      margin: 30px 5px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        font-size: 25px;
+        color: rgb(34, 31, 221);
+      }
+    }
+    .commentDesc {
+      margin-top: 30px;
+      width: 300px;
+      .comment {
+        font-size: 14px;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+        &:hover {
+          color: #3bdddd;
+        }
+      }
+      .commentName {
+        margin-left: 20px;
+        font-size: 22px;
+        color: #050513;
+        font-weight: 500;
+      }
+      .commentEmail {
+        color: #999;
+        font-size: 15px;
+        &:hover {
+          color: #ccc;
+          cursor: pointer;
+        }
+      }
+      .commentBody {
+        font-size: 17px;
+        letter-spacing: 0.7px;
+        margin-top: 10px;
+        color: rgb(19, 17, 17);
+      }
+    }
+  }
+  .prev {
+    position: absolute;
+    z-index: 3;
+    bottom: 15px;
+    right: 120px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    i {
+      font-size: 15px;
+      margin: 0px 5px;
+      color: #5f5e5d;
+      &:hover {
+        color: #3bdddd;
+      }
+    }
+    .prev1 {
+      font-size: 23px;
+      color: #4b4946;
+      letter-spacing: 0.7px;
+      &:hover {
+        color: #3bdddd;
+      }
+    }
+  }
+  .next {
+    position: fixed;
+    z-index: 2;
+    bottom: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    i {
+      font-size: 15px;
+      margin: 0px 5px;
+      color: #504e4b;
+      &:hover {
+        color: #3bdddd;
+      }
+    }
+    .next1 {
+      font-size: 23px;
+      color: #524f4b;
+      letter-spacing: 0.7px;
+      &:hover {
+        color: #3bdddd;
+      }
+    }
+  }
+}

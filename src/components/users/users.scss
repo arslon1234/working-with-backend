@@ -1,0 +1,47 @@
+@import "../../global.scss";
+.users {
+  width: 100%;
+  position: relative;
+  @include mobile {
+    overflow: scroll;
+  }
+  .userTitle {
+    margin: 0 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 1s linear;
+  }
+  .userInput {
+    width: 250px;
+    height: 45px;
+    margin: 10px 0px 0px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    background: linear-gradient(
+      90deg,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    @include mobile {
+      width: 200px;
+      height: 35px;
+    }
+  }
+  .user {
+    background-color: transparent;
+    margin-top: 20px;
+    // height: 85vh;
+    cursor: pointer;
+    text-align: center;
+    .head {
+      height: 50px;
+    }
+    .body {
+      height: 60px;
+      font-size: 16px;
+    }
+  }
+}

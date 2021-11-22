@@ -1,0 +1,63 @@
+@import "../../global.scss";
+
+.todos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include mobile {
+    width: 100%;
+    overflow: auto;
+  }
+  .todosTitle {
+    color: #3bdddd;
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    margin-top: 10px;
+  }
+  .todosPagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .todosBtn {
+      padding: 5px 15px;
+      margin: 10px 10px;
+      border: none;
+      background-color: transparent;
+      color: #3bdddd;
+      font-size: 18px;
+      border-radius: 5px;
+      &:hover {
+        border: 1px solid #3bdddd;
+      }
+    }
+    .todosPage {
+      color: #3bdddd;
+      font-size: 18px;
+      margin: 10px 5px;
+    }
+  }
+  .todosTable {
+    font-size: 17px;
+    color: #373b5e;
+    letter-spacing: 1.5px;
+    text-align: center;
+    .todotitle {
+      &:hover {
+        color: #3bdddd;
+        cursor: pointer;
+      }
+    }
+    .todoId {
+      &:hover {
+        color: #3bdddd;
+        cursor: pointer;
+      }
+    }
+    .todoCheck {
+      transform: scale(1.7);
+      cursor: pointer;
+    }
+  }
+}

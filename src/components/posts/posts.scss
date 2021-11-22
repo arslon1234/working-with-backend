@@ -1,0 +1,45 @@
+@import "../../global.scss";
+
+.posts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  @include mobile {
+    overflow: scroll;
+  }
+  .postTitle {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+    @include mobile {
+      overflow: scroll;
+    }
+  }
+  .postTable {
+    cursor: pointer;
+    height: 80vh;
+    color: #fff;
+    font-size: 17px;
+    @include mobile {
+      overflow: scroll;
+    }
+  }
+  .pagination {
+    .paginationBtn {
+      background-color: transparent;
+      padding: 5px 15px;
+      margin: 5px 10px;
+      color: #fff;
+      border: 1px solid #fff;
+      font-size: 17px;
+      border-radius: 4px;
+    }
+    .postPage {
+      color: #fff;
+      font-size: 17px;
+      margin-top: 10px;
+    }
+  }
+}
